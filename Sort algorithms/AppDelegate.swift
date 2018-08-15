@@ -11,14 +11,18 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        
+        setupWindow()
+        
     }
 
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+    func setupWindow() {
+        let windowSettings = MainWindowSettings.shared
+        let mainWindow = NSApplication.shared.windows[0]
+        mainWindow.acceptsMouseMovedEvents = true
+        mainWindow.title = "Swift sort algorithms"
+        windowSettings.applyFor(mainWindow)
     }
 
 

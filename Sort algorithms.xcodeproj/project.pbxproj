@@ -18,6 +18,9 @@
 		B7DA096221248E780059D702 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA096121248E780059D702 /* QuickSort.swift */; };
 		B7DA096621248ECE0059D702 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA096521248ECE0059D702 /* RandomGenerator.swift */; };
 		B7DA096821248F2E0059D702 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA096721248F2E0059D702 /* Validator.swift */; };
+		B7DA096A212490350059D702 /* SortAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA0969212490350059D702 /* SortAlgorithm.swift */; };
+		B7DA096C21249CCE0059D702 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA096B21249CCE0059D702 /* MainView.swift */; };
+		B7DA096F2124A15D0059D702 /* MainWindowSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA096E2124A15D0059D702 /* MainWindowSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		B7DA096121248E780059D702 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		B7DA096521248ECE0059D702 /* RandomGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
 		B7DA096721248F2E0059D702 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		B7DA0969212490350059D702 /* SortAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortAlgorithm.swift; sourceTree = "<group>"; };
+		B7DA096B21249CCE0059D702 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B7DA096E2124A15D0059D702 /* MainWindowSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 			children = (
 				B7DA094821248CF00059D702 /* AppDelegate.swift */,
 				B7DA094A21248CF00059D702 /* ViewController.swift */,
+				B7DA096D2124A1500059D702 /* View */,
 				B7DA096321248EA00059D702 /* Model */,
 				B7DA094C21248CF20059D702 /* Assets.xcassets */,
 				B7DA094E21248CF20059D702 /* Main.storyboard */,
@@ -91,13 +98,23 @@
 		B7DA096421248EAE0059D702 /* SortAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
-				B7DA095D21248E0C0059D702 /* BubbleSort.swift */,
+				B7DA0969212490350059D702 /* SortAlgorithm.swift */,
+				B7DA095B21248DE60059D702 /* SelectionSort.swift */,
 				B7DA095F21248E520059D702 /* InsertionSort.swift */,
+				B7DA095D21248E0C0059D702 /* BubbleSort.swift */,
 				B7DA096121248E780059D702 /* QuickSort.swift */,
 				B7DA095821248DA50059D702 /* MergeSort.swift */,
-				B7DA095B21248DE60059D702 /* SelectionSort.swift */,
 			);
 			path = SortAlgorithms;
+			sourceTree = "<group>";
+		};
+		B7DA096D2124A1500059D702 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7DA096B21249CCE0059D702 /* MainView.swift */,
+				B7DA096E2124A15D0059D702 /* MainWindowSettings.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,11 +188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7DA096621248ECE0059D702 /* RandomGenerator.swift in Sources */,
+				B7DA096F2124A15D0059D702 /* MainWindowSettings.swift in Sources */,
 				B7DA096821248F2E0059D702 /* Validator.swift in Sources */,
 				B7DA095C21248DE60059D702 /* SelectionSort.swift in Sources */,
+				B7DA096A212490350059D702 /* SortAlgorithm.swift in Sources */,
 				B7DA095921248DA50059D702 /* MergeSort.swift in Sources */,
 				B7DA096221248E780059D702 /* QuickSort.swift in Sources */,
 				B7DA095E21248E0C0059D702 /* BubbleSort.swift in Sources */,
+				B7DA096C21249CCE0059D702 /* MainView.swift in Sources */,
 				B7DA096021248E520059D702 /* InsertionSort.swift in Sources */,
 				B7DA094B21248CF00059D702 /* ViewController.swift in Sources */,
 				B7DA094921248CF00059D702 /* AppDelegate.swift in Sources */,

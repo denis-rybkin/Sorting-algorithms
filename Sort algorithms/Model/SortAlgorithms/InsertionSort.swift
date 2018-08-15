@@ -8,13 +8,11 @@
 
 import Foundation
 
-class InsertionSort {
+class InsertionSort: SortAlgorithm {
     
+    let algorithmType: SortAlgorithmType = .insertion
     
-    
-    
-    
-    func insertionSort(_ data: [Int]) -> [Int] {
+    static func sort(_ data: [Int]) -> [Int] {
         var unsorted = data
         for i in 0..<unsorted.count - 1{
             // compare elements
@@ -29,13 +27,5 @@ class InsertionSort {
         }
         return unsorted
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
 }

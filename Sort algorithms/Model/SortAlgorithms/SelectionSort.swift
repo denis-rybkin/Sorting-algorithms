@@ -8,10 +8,13 @@
 
 import Foundation
 
-class SelectionSort {
+class SelectionSort: SortAlgorithm {
     
+    private init() { }
     
-    func selectionSort(_ data: Array<Int>) -> Array<Int> {
+    let algorithmType: SortAlgorithmType = .selection
+    
+    static func sort(_ data: [Int]) -> [Int] {
         var unsorted = data
         for i in 0..<unsorted.count {
             var indexWithSmallestInt = i

@@ -9,8 +9,10 @@
 import Foundation
 
 class Validator {
+    
+    private init() { }
 
-    func validateSortedArray(_ sorted: [Int]) -> Bool {
+    static func isArraySorted(_ sorted: [Int]) -> Bool {
         if sorted.count <= 1 { return true }
         for i in 0...sorted.count - 1 {
             if i == sorted.count - 1 { continue }
@@ -20,7 +22,6 @@ class Validator {
         }
         return true
     }
-
 
 }
 

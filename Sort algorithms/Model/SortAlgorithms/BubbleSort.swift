@@ -8,11 +8,12 @@
 
 import Foundation
 
-class BubbleSort {
+class BubbleSort: SortAlgorithm {
+    
+    let algorithmType: SortAlgorithmType = .bubble
     
     
-    
-    func bubbleSort(_ data: [Int]) -> [Int] {
+    static func sort(_ data: [Int]) -> [Int] {
         var unsorted = data
         var lastIndex = unsorted.count - 1
         while lastIndex > 0 {
@@ -25,8 +26,5 @@ class BubbleSort {
         }
         return unsorted
     }
-    
-    
-    
     
 }
