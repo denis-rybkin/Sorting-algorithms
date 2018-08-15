@@ -100,9 +100,6 @@ class MainView: NSView {
         
         for (i, point) in data.enumerated() {
             
-            
-            
-            
             let x = (CGFloat(i + 1) * xMultiplier) + spacingFromWindowBounds
             let y = CGFloat(point) * yMultiplier + spacingFromWindowBounds
             let nextPoint = CGPoint(x: x, y: y)

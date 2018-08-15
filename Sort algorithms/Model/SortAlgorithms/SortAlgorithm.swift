@@ -19,7 +19,7 @@ protocol SortAlgorithm {
 enum SortAlgorithmType: Int {
     case selection = 0
     case insertion = 1
-    case bubble = 2
-    case quick = 3
-    case merge = 4
+    case bubble    = 2
+    case quick     = 3
+    case merge     = 4
 }
